@@ -1,0 +1,28 @@
+# Ignore IDE-specific files and directories
+.idea/
+.vscode/
+*.iml
+.project
+.classpath
+.settings/
+
+# Ignore build artifacts and temporary files
+build/
+target/
+dist/
+*.log
+*.tmp
+temp/
+
+# Ignore dependency management files
+node_modules/
+
+# Ignore operating system generated files
+.DS_Store
+Thumbs.db
+
+# Ignore sensitive information
+.env
+
+# Ignore static files
+#images/
