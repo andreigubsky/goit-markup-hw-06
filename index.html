@@ -22,73 +22,76 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style-tablet.css" />
+    <link rel="stylesheet" href="./css/style-desktop.css" />
     <title>Document</title>
   </head>
   <body>
-    <div class="mob-menu">
-      <button class="mob-close-menu-btn">
-        <svg class="menu-close-icon">
-          <use href="./images/icons.svg#close-icon"></use>
-        </svg>
-      </button>
-      <nav class="navigation">
-        <a href="./index.html" class="logo">Web<span>Studio</span></a>
-        <ul class="top-menu">
-          <li class="menu-item">
-            <a href="./index.html" class="top-menu-item current">Studio</a>
+    <div class="mob-menu 1is-open">
+      <div class="container">
+        <button class="mob-close-menu-btn">
+          <svg class="icon-close" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav class="navigation">
+          <ul class="top-menu">
+            <li class="menu-item">
+              <a href="./index.html" class="top-menu-item current">Studio</a>
+            </li>
+            <li class="menu-item">
+              <a href="" class="top-menu-item">Portfolio</a>
+            </li>
+            <li class="menu-item">
+              <a href="" class="top-menu-item">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="address">
+          <ul class="menu-contacts">
+            <li class="contact-li current">
+              <a href="mailto:info@devstudio.com" class="contact-link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contact-li">
+              <a href="tel:+110001111111" class="contact-link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="icon-list">
+          <li class="icon-item">
+            <a href="https://www.instagram.com/" target="_blank" class="link">
+              <svg class="icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
           </li>
-          <li class="menu-item">
-            <a href="" class="top-menu-item">Portfolio</a>
+          <li class="icon-item">
+            <a href="https://www.twiter.com/" target="_blank" class="link">
+              <svg class="icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
           </li>
-          <li class="menu-item">
-            <a href="" class="top-menu-item">Contacts</a>
+          <li class="icon-item">
+            <a href="https://www.facebook.com/" target="_blank" class="link">
+              <svg class="icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="icon-item">
+            <a href="https://www.linkedin.com/" target="_blank" class="link">
+              <svg class="icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
           </li>
         </ul>
-      </nav>
-      <address class="address">
-        <ul class="menu-contacts">
-          <li class="contact-li">
-            <a href="mailto:info@devstudio.com" class="contact-link"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="contacts-li">
-            <a href="tel:+110001111111" class="contact-link"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
-      </address>
-      <ul class="icon-list">
-        <li class="icon-item">
-          <a href="https://www.instagram.com/" target="_blank" class="link">
-            <svg class="icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="icon-item">
-          <a href="https://www.twiter.com/" target="_blank" class="link">
-            <svg class="icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="icon-item">
-          <a href="https://www.facebook.com/" target="_blank" class="link">
-            <svg class="icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="icon-item">
-          <a href="https://www.linkedin.com/" target="_blank" class="link">
-            <svg class="icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-linkedin"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+      </div>
     </div>
     <!-- #region Header -->
     <header class="page-header">
@@ -121,6 +124,11 @@
             </li>
           </ul>
         </address>
+        <div class="burger-menu">
+          <svg class="icon-close" width="16.8" height="14.4">
+            <use href="./images/icons.svg#icon-burger-menu"></use>
+          </svg>
+        </div>
       </div>
     </header>
     <!-- #endregion -->
