@@ -319,7 +319,7 @@ input {
     justify-content: center;
 }
 
-/* .section.benefits .section-header {
+.section.benefits .section-header {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
@@ -327,7 +327,7 @@ input {
     text-align: center;
     text-transform: capitalize;
     color: #2E2F42;
-} */
+}
 
 .visually-hidden {
     position: absolute;
@@ -454,10 +454,6 @@ input {
     justify-content: center
 }
 
-.icon-list .icon-item a {
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .icon-list .link {
     display: flex;
     justify-content: center;
@@ -469,12 +465,6 @@ input {
     border-radius: 50%;
     /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
-
-/* .icon-list .link:hover,
-.icon-list .link:focus {
-    background-color: #404bbf;
-    cursor: pointer;
-} */
 
 .icon-social {
     fill: var(--color-svg);
@@ -536,7 +526,6 @@ input {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
-    transform: cursor;
     /* transition: transform 250ms ease-in-out; */
 }
 
@@ -849,7 +838,7 @@ input {
     padding-left: 38px;
     background-color: transparent;
     outline: transparent;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .form-input:placeholder-shown {
@@ -864,12 +853,10 @@ input {
     left: 16px;
     z-index: 1;
     transform: translateY(-50%);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
-.modal-form-input:focus-within+.icon-input {
-    fill: #4D5AE5;
-}
+
 
 .form-wrapper-comment {
     margin-bottom: 8px;
@@ -888,7 +875,7 @@ input {
     background-color: transparent;
     outline: transparent;
     resize: none;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .checkbox-wrapper {
@@ -916,7 +903,7 @@ input {
     align-items: center;
     margin-right: 8px;
     fill: transparent;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .visually-hidden:checked+.privacy-label .privacy-label-span {
@@ -956,4 +943,4 @@ input {
     background-color: var(--color-blue-a);
     color: #fff;
     display: block;
-    }
+}
