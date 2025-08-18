@@ -10,61 +10,22 @@
 
     /* #region Header  */
 
-    .page-header {
-        border-bottom: 1px solid #E7E9FC;
-        box-shadow:
-            2px 1px rgba(46, 47, 66, 0.08),
-            0px 1px 1px rgba(46, 47, 66, 0.16),
-            0px 1px 6px rgba(46, 47, 66, 0.08);
-    }
 
     .page-header .container {
-        /* display: flex; */
-        /* justify-content: space-between;
-        align-items: center; */
-    }
-
-    /* .navigation {
-        display: flex;
-        align-items: center;
-    } */
-
-    /* .logo {
-        font-family: 'Raleway', sans-serif;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 1.17;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #4d5ae5;
-    } */
-
-    /* .navigation .logo {
-        margin-right: 76px;
-        padding: 24px 0;
-    } */
-
-    .logo span {
-        color: #2e2f42;
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
 
     .top-menu {
-        display: block;
-        font-weight: 500;
+        /* display: block; */
+        /* font-weight: 500;
         letter-spacing: 0.02em;
         display: flex;
-        gap: 40px;
-    }
+        gap: 40px; */
 
-    .address {
-        display: block;
     }
 
     .navigation .top-menu .top-menu-item {
-        color: #000000;
-        display: block;
-        padding: 24px 0;
-        position: relative;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
@@ -88,30 +49,15 @@
         bottom: -1px;
     }
 
-    /* .menu-item:first-child{
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
+
 
 
     /* Address */
     .address .menu-contacts {
         font-style: normal;
-        display: flex;
-        gap: 40px;
+        flex-direction: row;
+        column-gap: 40px;
     }
-
-    /* .contact-li {
-        margin-right: 40px;
-    } */
-
-    /* .contact-link {
-        letter-spacing: 0.02em;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    } */
-
-    /* .menu-contacts:last-child li {
-        margin-right: 0;
-    } */
 
     .contact-link:hover,
     .contact-link:focus {

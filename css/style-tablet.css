@@ -23,27 +23,6 @@
             0px 1px 6px rgba(46, 47, 66, 0.08);
     }
 
-    .page-header .container {
-        /* display: flex; */
-        /* justify-content: space-between;
-        align-items: center; */
-    }
-
-    /* .navigation {
-        display: flex;
-        align-items: center;
-    } */
-
-    /* .logo {
-        font-family: 'Raleway', sans-serif;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 1.17;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #4d5ae5;
-    } */
-
     .navigation .logo {
         margin-right: 76px;
         padding: 24px 0;
@@ -54,11 +33,19 @@
     }
 
     .top-menu {
+        font-size: 16px;
+        line-height: 1.5;
         font-weight: 500;
         letter-spacing: 0.02em;
         display: flex;
         flex-direction: row;
         gap: 40px;
+        margin-bottom: 0;
+    }
+
+    .address {
+        display: block;
+        margin-bottom: 0;
     }
 
     .navigation .top-menu .top-menu-item {
@@ -66,12 +53,7 @@
         display: block;
         padding: 24px 0;
         position: relative;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    .navigation .top-menu .top-menu-item:hover,
-    .navigation .top-menu .top-menu-item:focus {
-        color: #404BBF;
+        /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
     }
 
     .navigation .top-menu .top-menu-item.current {
@@ -93,15 +75,18 @@
     .address .menu-contacts {
         font-style: normal;
         display: flex;
-        gap: 40px;
+        row-gap: 12px;
     }
 
     .contact-li {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
         margin-right: 40px;
     }
 
     .contact-link {
-        letter-spacing: 0.02em;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
@@ -109,10 +94,6 @@
         margin-right: 0;
     }
 
-    /* .contact-link:hover,
-    .contact-link:focus {
-        color: #404BBF;
-    } */
 
     /* #endregion */
 
