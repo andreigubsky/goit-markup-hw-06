@@ -69,6 +69,10 @@ input {
     margin-left: auto;
     margin-right: auto;
 }
+.section{
+    max-width: 320px;
+    margin: 0 auto;
+}
 
 /* #region Menu mobile */
 .mob-menu {
@@ -119,7 +123,7 @@ input {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin-bottom: 168px;
+    margin-bottom: auto;
 }
 
 .navigation-mob .top-menu-mob .top-menu-item-mob {
@@ -196,8 +200,7 @@ input {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 17.5px;
-    padding-bottom: 17.5px;
+    
     /* box-shadow:
         0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.08); */
@@ -216,6 +219,8 @@ input {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    padding-top: 17.5px;
+    padding-bottom: 17.5px;
 }
 
 .logo span {
@@ -237,19 +242,19 @@ input {
 
 .main-page {
     background-color: #2E2F42;
-    padding: 52px 0;
+    padding: 72px 0;
     text-align: center;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     max-width: 1158px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-mobile@1x.jpg);
     margin: 0 auto;
 }
 
 @media (min-resolution: 2x) {
     .main-page {
-    background-image: url(../images/people-office@2x.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),url(../images/people-office-mobile@2x.jpg);
     }
 }
 
@@ -293,7 +298,7 @@ input {
 /* #region Section our-benefits - 2 */
 
 .section.benefits {
-    padding: 98px 0 98px 0;
+    padding: 96px 0 96px 0;
     display: flex;
     justify-content: center;
 }
@@ -351,7 +356,7 @@ input {
     letter-spacing: 0.02em;
     color: #434455;
     text-align: start;
-    max-width: 288px;
+    max-width: 320px;
 }
 
 /* #endregion */
@@ -360,9 +365,9 @@ input {
 
 .section.team {
     background-color: #F4F4FD;
-    padding: 98px 0 98px 0;
-    display: flex;
-    justify-content: center;
+    padding: 96px 0 96px 0;
+    
+    
 
 }
 
@@ -376,7 +381,9 @@ input {
     color: #2E2F42;
     margin-bottom: 72px;
 }
-
+ .container .team-list{
+    margin: 0 auto;
+}
 .team-list {
     display: flex;
     justify-content: center;
@@ -405,6 +412,7 @@ input {
 
 .team-member .thumb {
     padding: 32px 0;
+    
 
 }
 
@@ -538,16 +546,13 @@ input {
 .page-footer {
     color: #F4F4FD;
     background-color: #2E2F42;
-    padding: 97.5px 0;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    row-gap: 72px;
+    padding: 96px 0;
+   
     width: 100%;
 }
 
 .page-footer .container {
-    max-width: 288px;
+    max-width: 320px;
 
 
 }
@@ -646,7 +651,7 @@ input {
 }
 
 .feedback-input {
-    width: 264px;
+    width: 288px;
     height: 40px;
     border: 1px solid #fff;
     border-radius: 4px;
@@ -711,14 +716,14 @@ input {
 .modal {
     background-color: #fcfcfc;
     border-radius: 4px;
-    padding: 72px 24px 24px 24px;
+    padding: 72px 16px 24px 16px;
     position: absolute;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    max-width: 288px;
+    min-width: 288px;
     min-height: 623px;
     overflow-y: auto;
     display: flex;
@@ -806,8 +811,8 @@ input {
 }
 
 .icon-input {
-    width: 12px;
-    height: 12px;
+    /* width: 12px;
+    height: 12px; */
     position: absolute;
     top: 50%;
     left: 16px;
@@ -909,12 +914,12 @@ input {
 
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 768px;
-        padding-left: 0px;
-        padding-right: 0px; 
+        max-width: 768px; 
+               
     }
 
     .section {
+        max-width: 768px;
         padding-top: 120px;
         padding-bottom: 120px;
     }
@@ -956,6 +961,11 @@ input {
     .address {
         display: block;
         margin-bottom: 0;
+        width: 119px;
+        font-size: 12px;
+        line-height: 1.1;
+        letter-spacing: 0.04em;
+
     }
 
     .navigation .top-menu .top-menu-item {
@@ -985,6 +995,7 @@ input {
     .address .menu-contacts {
         font-style: normal;
         display: flex;
+        flex-wrap: wrap;
         row-gap: 12px;
     }
 
@@ -1017,14 +1028,19 @@ input {
 
     .main-page {
         background-color: #2E2F42;
-        padding: 188px 0;
+        padding: 112px 0;
         text-align: center;
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
         max-width: 1440px;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-tablet@1x.jpg);
         margin: 0 auto;
+    }
+    @media (min-resolution: 2x) {
+        .main-page {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),url(../images/people-office-tablet@2x.jpg);
+        }
     }
 
     .section .main-page-header {
@@ -1050,7 +1066,7 @@ input {
         border: none;
         border-radius: 4px;
         display: block;
-        margin: 48px auto 0;
+        margin: 36px auto 0;
         min-width: 169px;
         cursor: pointer;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1066,6 +1082,8 @@ input {
 
     /* #region Section our-benefits - 2 */
     .section.benefits {
+        display: flex;
+        justify-content: center;
         padding: 96px 0 96px 0;
     }
 
@@ -1087,13 +1105,17 @@ input {
     .benefits-list .benefits-header {
         text-align: start;
     }
-
+    .benefits-list .benefits-paragraph {
+        font-weight: 400;
+    }
 
     /* #endregion */
 
     /* #region Section our-team - 3 */
 
     .section.team {
+        display: flex;
+        justify-content: center;
         padding: 120px 0;
     }
 
@@ -1101,7 +1123,7 @@ input {
         flex-direction: row;
         flex-wrap: wrap;
         max-width: 552px;
-        row-gap: 24px;
+        row-gap: 64px;
         column-gap: 24px;
     }
 
@@ -1169,10 +1191,16 @@ input {
 
     .page-footer {
         padding: 100px 0;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 72px;
         flex-direction: row;
         justify-content: start;
         column-gap: 24px;
+
     }
+
+    
 
     .page-footer .container p {
         max-width: 264px;
@@ -1180,9 +1208,14 @@ input {
     }
 
     .page-footer .container {
-        max-width: 736px;
+        max-width: 768px;
+        justify-content: start;
+        flex-wrap: wrap;
+        column-gap: 24px;
         align-items: baseline;
         text-align: start;
+        padding-left: 108px;
+        
     }
 
     .page-footer .logo {
@@ -1201,6 +1234,9 @@ input {
     .feedback-form {
         flex-direction: row;
     }
+    .feedback-input {
+        width: 264px;}
+    
 
 
     /* #endregion */
@@ -1211,6 +1247,7 @@ input {
         max-width: 408px;
         min-height: 584px;
         padding-top: 24px;
+        padding: 72px 24px 24px 24px;
     }
 
     .modal-form-input:focus-within+.icon-input {
@@ -1234,23 +1271,11 @@ input {
         padding-left: 15px;
         padding-right: 15px;
     }
+    .section{
+        max-width: 1158px;
+    }
 
     /* #region Header  */
-
-
-    .page-header .container {
-        padding-top: 24px;
-        padding-bottom: 24px;
-    }
-
-    .top-menu {
-        /* display: block; */
-        /* font-weight: 500;
-        letter-spacing: 0.02em;
-        display: flex;
-        gap: 40px; */
-
-    }
 
     .navigation .top-menu .top-menu-item {
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1280,6 +1305,10 @@ input {
 
 
     /* Address */
+    .address{
+         width: auto;
+    }
+   
     .address .menu-contacts {
         font-style: normal;
         flex-direction: row;
@@ -1303,8 +1332,13 @@ input {
         background-position: center center;
         background-size: cover;
         max-width: 1440px;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-desktop@1x.jpg);
         margin: 0 auto;
+    }
+    @media (min-resolution: 2x) {
+        .main-page {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),url(../images/people-office-desktop@2x.jpg);
+        }
     }
 
     .section .main-page-header {
@@ -1388,6 +1422,7 @@ input {
 
     .team-list {
         flex-wrap: nowrap;
+        
 
     }
 
