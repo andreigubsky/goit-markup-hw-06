@@ -71,7 +71,7 @@ input {
 }
 
 .section {
-    max-width: 100%;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -101,6 +101,16 @@ input {
     visibility: visible;
 }
 
+.mob-menu-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 40px;
+    padding-top: 72px;
+    position: relative;
+    box-sizing: border-box;
+}
+
 .mob-close-menu-btn {
     width: 24px;
     height: 24px;
@@ -109,7 +119,7 @@ input {
     background-color: #E7E9FC;
     position: absolute;
     top: 24px;
-    right: 24px;
+    right: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,6 +134,10 @@ input {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    margin-bottom: auto;
+}
+
+.navigation-mob {
     margin-bottom: auto;
 }
 
@@ -202,9 +216,16 @@ input {
     justify-content: space-between;
     align-items: center;
 
-    /* box-shadow:
-        0px 1px 6px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.08); */
+
+}
+
+.page-header {
+
+    border-bottom: 1px solid #E7E9FC;
+    box-shadow:
+        2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .navigation {
@@ -300,8 +321,7 @@ input {
 
 .section.benefits {
     padding: 96px 0 96px 0;
-    display: flex;
-    justify-content: center;
+
 }
 
 .section.benefits .section-header {
@@ -367,9 +387,6 @@ input {
 .section.team {
     background-color: #F4F4FD;
     padding: 96px 0 96px 0;
-
-
-
 }
 
 .section.team .section-header {
@@ -923,8 +940,8 @@ input {
     }
 
     .section {
-        padding-top: 120px;
-        padding-bottom: 120px;
+        padding-top: 96px;
+        padding-bottom: 96px;
     }
 
     .mob-menu {
@@ -932,14 +949,7 @@ input {
     }
 
     /* #region Header */
-    .page-header {
 
-        border-bottom: 1px solid #E7E9FC;
-        box-shadow:
-            2px 1px rgba(46, 47, 66, 0.08),
-            0px 1px 1px rgba(46, 47, 66, 0.16),
-            0px 1px 6px rgba(46, 47, 66, 0.08);
-    }
 
     .navigation .logo {
         margin-right: 76px;
@@ -1086,8 +1096,6 @@ input {
 
     /* #region Section our-benefits - 2 */
     .section.benefits {
-        display: flex;
-        justify-content: center;
         padding: 96px 0 96px 0;
     }
 
@@ -1112,6 +1120,7 @@ input {
 
     .benefits-list .benefits-paragraph {
         font-weight: 400;
+        max-width: none;
     }
 
     /* #endregion */
@@ -1119,9 +1128,7 @@ input {
     /* #region Section our-team - 3 */
 
     .section.team {
-        display: flex;
-        justify-content: center;
-        padding: 120px 0;
+        padding: 96px 0;
     }
 
     .team-list {
@@ -1149,9 +1156,6 @@ input {
 
     /* #region Section our-portfolio - 4 */
 
-    .section.portfolio {
-        padding: 120px 0 120px 0;
-    }
 
     .section.portfolio .section-header {
         font-weight: 500;
@@ -1194,22 +1198,19 @@ input {
 
     /* #region Footer */
 
-    .page-footer {
-        padding: 100px 0;
-        display: flex;
-        flex-wrap: wrap;
-        row-gap: 72px;
-        flex-direction: row;
-        justify-content: start;
-        column-gap: 24px;
 
+
+    /* .page-footer .logo {
+        text-align: right;
+    } */
+
+    .message-footer {
+        text-align: start;
     }
-
-
 
     .page-footer .container p {
         max-width: 264px;
-
+        text-align: start;
     }
 
     .page-footer .container {
@@ -1277,6 +1278,10 @@ input {
         max-width: 1158px;
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    .section {
+        padding: px 0 120px 0;
     }
 
     /* #region Header  */
@@ -1469,9 +1474,14 @@ input {
     /* #endregion */
 
     /* #region Section our-portfolio - 4 */
+    .section.portfolio {
+        padding: 120px 0;
+    }
 
     .porfolio-item {
         flex-basis: calc((100% - 48px)/3);
+        position: relative;
+        overflow: hidden;
         transition: transform 250ms ease-in-out;
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -1483,7 +1493,10 @@ input {
 
     /* Image */
 
-
+    .image-application {
+        position: relative;
+        overflow: hidden;
+    }
 
     /* Overlay text over portfolio item */
     .overlay {
@@ -1501,6 +1514,7 @@ input {
         transform: translateY(100%);
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
         cursor: pointer;
+        display: block;
     }
 
     .porfolio-item:hover .overlay,
@@ -1526,6 +1540,9 @@ input {
 
     /* #region Footer */
 
+    .page-footer {
+        padding: 100px 0;
+    }
 
     .page-footer .container p {
         max-width: 264px;
@@ -1533,7 +1550,7 @@ input {
     }
 
     .page-footer .container {
-        max-width: 1126px;
+        max-width: 1158px;
         flex-wrap: nowrap;
         padding-left: 15px;
         padding-right: 15px;
